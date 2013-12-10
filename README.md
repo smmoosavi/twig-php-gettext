@@ -5,7 +5,7 @@ Twig extension for smmoosavi/php-gettext.
 
 ## How to Install
 
-#### using [Composer](http://getcomposer.org/)
+#### Using [Composer](http://getcomposer.org/)
 
 Create a composer.json file in your project root:
 
@@ -26,7 +26,7 @@ $ php composer.phar install
 
 ## How to use
 
-Do every thing require for [twig](http://twig.sensiolabs.org/doc/intro.html) and [php-gettext](https://github.com/smmoosavi/php-gettext) and add following line:
+Do everything required for [twig](http://twig.sensiolabs.org/doc/intro.html) and [php-gettext](https://github.com/smmoosavi/php-gettext) and add following line:
 
 ```php
 $twig->addExtension(new smmoosavi\util\twiggettext\Extension_L10n());
@@ -59,30 +59,30 @@ echo $twig->render("{{ __('Hi') }} {{ name }}<br>", array('name' => 'علی'));
 ```
 ## Reference
 
-### List of functions
+### Functions
 
 * `trans('Hi')`
 * `__('Hi')`
 
-### List of filters
+### Filters
 
 * `'Hi'|trans`
 * `'Hi'|__`
 
-### List of tags
+### Tags
 
 * `trans`
 * `plural`
 * `endtrans`
 
-#### Example
+#### Examples
 Template:
 ```
 {% trans %}
     Hi
 {% endtrans %}
 ```
-Translation at .po file:
+Translations in .po file:
 ```
 msgid "Hi"
 msgstr "سلام"
@@ -94,14 +94,13 @@ Template:
     Dear {{name}},
 {% endtrans %}
 ```
-Translation at .po file:
+Translations in .po file:
 ```
 msgid "Dear %name%,"
 msgstr "%name% عزیز،"
 ```
 
 Template:
-
 ```
 {% trans %}
     an apple.
@@ -109,7 +108,7 @@ Template:
     {{ count }} apples.
 {% endtrans %}
 ```
-Translation at .po file:
+Translations in .po file:
 ```
 msgid "an apple"
 msgid_plural "%count% apples"
