@@ -22,18 +22,18 @@ Then run the following composer command:
 ```bash
 $ php composer.phar install
 ```
-Note: twig and php-gettext will be installed with twig-php-gettext too
+Note: twig and php-gettext will be installed with twig-php-gettext too.
 
 ## How to use
 
-do every thing require for [twig](http://twig.sensiolabs.org/doc/intro.html) and [php-gettext](https://github.com/smmoosavi/php-gettext) and add flowing line.
+do every thing require for [twig](http://twig.sensiolabs.org/doc/intro.html) and [php-gettext](https://github.com/smmoosavi/php-gettext) and add following line:
 
 ```php
 $twig->addExtension(new smmoosavi\util\twiggettext\Extension_L10n());
 ```
 
 now you can use `__` in your template.
-### complete example
+### Complete example
 
 ```php
 <?php // test.php
@@ -57,25 +57,25 @@ $twig->addExtension(new smmoosavi\util\twiggettext\Extension_L10n());
 // simple use twig-php-gettext
 echo $twig->render("{{ __('Hi') }} {{ name }}<br>", array('name' => 'علی'));
 ```
-## refrence
+## Refrence
 
-### list of functions
+### List of functions
 
 * `trans('Hi')`
 * `__('Hi')`
 
-### list of filters
+### List of filters
 
 * `'Hi'|trans`
 * `'Hi'|__`
 
-### list of tags
+### List of tags
 
 * `trans`
 * `plural`
 * `endtrans`
 
-#### example
+#### Example
 example 1:
 
 ```
