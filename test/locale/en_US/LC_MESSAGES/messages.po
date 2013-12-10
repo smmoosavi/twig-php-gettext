@@ -10,9 +10,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 msgid "test"
 msgstr "test"
 
 msgid "Hi"
 msgstr "Hello"
+
+msgid "an apple"
+msgid_plural "%count% apples"
+msgstr[0] "an apple"
+msgstr[1] "%count% apples"

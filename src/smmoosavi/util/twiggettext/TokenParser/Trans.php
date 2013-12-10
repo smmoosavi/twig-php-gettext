@@ -41,7 +41,7 @@ class TokenParser_Trans extends \Twig_TokenParser
 
         $this->checkTransString($body, $lineno);
 
-        return new \Twig_Extensions_Node_Trans($body, $plural, $count, $lineno, $this->getTag());
+        return new \smmoosavi\util\twiggettext\Node_Trans($body, $plural, $count, $lineno, $this->getTag());
     }
 
     public function decideForFork($token)

@@ -18,10 +18,10 @@ class Extension_L10n extends \Twig_Extension
      *
      * @return array An array of Twig_TokenParserInterface or Twig_TokenParserBrokerInterface instances
      */
-//    public function getTokenParsers()
-//    {
-//        return array(new \Twig_Extensions_TokenParser_Trans());
-//    }
+    public function getTokenParsers()
+    {
+        return array(new \smmoosavi\util\twiggettext\TokenParser_Trans());
+    }
 
     /**
      * Returns a list of filters to add to the existing list.

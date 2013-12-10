@@ -41,7 +41,7 @@ class Node_Trans extends \Twig_Node
             $vars = array_merge($vars, $vars1);
         }
 
-        $function = null === $this->getNode('plural') ? 'L10n::gettext' : 'L10n::ngettext';
+        $function = null === $this->getNode('plural') ? '\\smmoosavi\\gettext\\L10n::gettext' : '\\smmoosavi\\gettext\\L10n::ngettext';
 
         if ($vars) {
             $compiler
