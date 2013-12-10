@@ -31,16 +31,16 @@ class Extension_L10n extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            'trans' => new \Twig_Filter_Function('L10n::gettext'),
-            '__' => new \Twig_Filter_Function('L10n::gettext'),
+            'trans' => new \Twig_Filter_Function('\\smmoosavi\\gettext\\L10n::gettext'),
+            '__' => new \Twig_Filter_Function('\\smmoosavi\\gettext\\L10n::gettext'),
         );
     }
 
     public function getFunctions()
     {
         return array(
-            'trans' => new \Twig_Function_Function('L10n::gettext'),
-            '__' => new \Twig_Function_Function('L10n::gettext'),
+            'trans' => new \Twig_Function_Function('\\smmoosavi\\gettext\\L10n::gettext'),
+            '__' => new \Twig_Function_Function('\\smmoosavi\\gettext\\L10n::gettext'),
         );
     }
 
