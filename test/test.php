@@ -1,5 +1,6 @@
 <?php
-use smmoosavi\gettext\L10n;
+require_once '../vendor/autoload.php';
+use smmoosavi\util\gettext\L10n;
 
 /**
  * Created by JetBrains PhpStorm.
@@ -8,7 +9,7 @@ use smmoosavi\gettext\L10n;
  * Time: 9:31 AM
  */
 
-require_once '../vendor/autoload.php';
+
 
 $locale = 'fa_IR';
 $lang = 'fa';

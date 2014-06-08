@@ -16,7 +16,7 @@
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  */
 namespace smmoosavi\util\twiggettext;
-use smmoosavi\gettext\L10n;
+use smmoosavi\util\gettext\L10n;
 class Node_Trans extends \Twig_Node
 {
     public function __construct(\Twig_NodeInterface $body, \Twig_NodeInterface $plural = null,\Twig_Node_Expression $count = null, $lineno, $tag = null)
@@ -41,7 +41,7 @@ class Node_Trans extends \Twig_Node
             $vars = array_merge($vars, $vars1);
         }
 
-        $function = null === $this->getNode('plural') ? '\\smmoosavi\\gettext\\L10n::gettext' : '\\smmoosavi\\gettext\\L10n::ngettext';
+        $function = null === $this->getNode('plural') ? '\\smmoosavi\\util\\gettext\\L10n::gettext' : '\\smmoosavi\\util\\gettext\\L10n::ngettext';
 
         if ($vars) {
             $compiler

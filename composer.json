@@ -10,7 +10,7 @@
     "minimum-stability": "dev",
     "require": {
         "twig/twig": "~1.0",
-        "smmoosavi/php-gettext":"dev-master",
+        "smmoosavi/php-gettext":"~1.0",
         "php": ">=5.3.0"
     },
     "autoload": {
