@@ -38,7 +38,7 @@ Now you can use `__`, `trans` in your template.
 ```php
 <?php // test.php
 require_once '../vendor/autoload.php';
-
+use smmoosavi\util\gettext\L10n;
 // initializing php-gettext
 $locale = 'fa_IR';
 $lang = 'fa';
